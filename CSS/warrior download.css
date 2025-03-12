@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.page1{
+    /* border: 1px solid snow; */
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+}
+
+.page1 .nav{
+    /* border: 1px solid snow; */
+    height: 10%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position:fixed;
+    z-index: +999;
+}
+
+.nav .logo{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 5%;
+    background: url(../images/1logo.png) no-repeat;
+    background-size: cover;
+}
+
+.nav ul{
+    /* border: 1px solid snow; */
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav ul span{
+    color: palevioletred;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: snow;
+}
+
+ul li a:hover{
+    color: palevioletred;
+    transition: 0.5s;
+
+}
+
+.nav .icon{
+    /* border: 1px solid gold; */
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    color: snow;
+    font-size: 1.5rem;
+}
+
+.icon .bar{
+    visibility: hidden;
+}
+
+.search:hover{
+    color: palevioletred;
+    transition: 0.5s;
+}
+
+.user:hover{
+    color: palevioletred;
+    transition: 0.5s;
+}
+
+.bar:hover{
+    color: palevioletred;
+    transition: 0.5s;
+}
+
+
+.page1 .container{
+    /* border: 1px solid red; */
+    height:85% ;
+    width: 100%;
+}
+
+.container .box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box .rightbox{
+    /* border: 1px solid snow; */
+    height: 90%;
+    width: 50%;
+    margin-top: 80PX;
+}
+
+.rightbox img{
+    /* border: 1px solid red ; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+   background-size: cover;
+
+}
+
+.box .leftbox{
+    /* border: 1px solid snow; */
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftbox p{
+    width: 90%;
+    margin-top: 100PX;
+    color: snow;
+    text-align: justify;
+}
+
+.leftbox .button{
+    border: 2px solid snow;
+    width: 44%;
+    height: 15%;
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftbox .button:hover{
+    background-color: snow;
+    transition: 0.5s;
+}
+
+.button h1{
+    color:  snow;
+}
+
+.button h1:hover{
+    color: palevioletred;
+    transition: 0.5s;
+}
+
+/* tab */
+
+@media all and (max-width:768px){
+    .page1 {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .page1 .nav {
+        /* border: 1px solid snow; */
+        height: 6%;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        z-index: +999;
+    }
+
+    .nav .logo {
+        /* border: 1px solid snow; */
+        height: 100%;
+        width: 7%;
+        margin-top: -8px;
+    }
+
+    .nav ul {
+        /* border: 1px solid snow; */
+        width: 80%;
+    }
+
+    .nav .icon {
+        /* border: 1px solid snow; */
+        width:15%;
+    }
+
+    .page1 p {
+        /* border: 1px solid snow; */
+        font-size: 0.7rem;
+        margin-top:-20px;
+    }
+
+    .rightbox img{
+        /* border: 1px solid red ; */
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 20px;
+       background-size: cover;
+    
+    }
+
+    .leftbox .button{
+        border: 2px solid snow;
+        width: 54%;
+        height: 10%;
+        border-radius: 10px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button h1{
+        font-size: 1rem;
+        color:  snow;
+    }
+}
+
+/* Mobile */
+@media all and (max-width:667px){
+    .page1 {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .page1 .nav {
+        /* border: 1px solid snow; */
+        height: 6%;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        z-index: +999;
+    }
+
+    .nav .logo {
+        /* border: 1px solid snow; */
+        height: 90%;
+        width: 9%;
+        margin-top: -8px;
+    }
+
+    .nav ul {
+        /* border: 1px solid snow; */
+        width: 60%;
+        font-size: 0.5rem;
+        visibility: hidden;
+    }
+
+    .nav .icon {
+        /* border: 1px solid snow; */
+        width: 25%;
+        font-size: 0.8rem;
+        visibility: hidden;
+    }
+
+    .icon .bar{
+        visibility: visible;
+    }
+
+    .page1 p {
+        /* border: 1px solid snow; */
+        font-size: 0.4rem;
+        margin-top: 50pxpx;
+    }
+
+    .rightbox img{
+        /* border: 1px solid red ; */
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 20px;
+       background-size: cover;
+    
+    }
+
+    
+.box .leftbox{
+    /* border: 1px solid snow; */
+    height: 90%;
+    width: 45%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    .leftbox .button{
+        border: 2px solid snow;
+        width: 54%;
+        height: 10%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button h1{
+        font-size: 0.5rem;
+        color:  snow;
+    }
+}
+
+/* page2  */
+
+.page2{
+    /* border: 1px solid snow; */
+    background-color: black;
+    height: 70vh;
+    width: 100%;
+    
+}
+
+.container1{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid snow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container1 .smallbox{
+    border: 1px solid snow;
+    height: 45%;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.container1 .smallbox:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.box1{
+    background: url(https://wallpapers.com/images/hd/halo-infinite-1920-x-1080-background-u1ck8slaqu74sei2.jpg);
+    background-size: cover;
+}
+
+.box2{
+    background: url(https://c4.wallpaperflare.com/wallpaper/399/582/554/forza-motorsport-7-forza-games-pc-games-wallpaper-preview.jpg);
+    background-size: cover;
+}
+
+.box3{
+    background: url(https://wallpapers.com/images/hd/gta-online-tw789kscgtcx64k6.jpg);
+    background-size: cover;
+}
+
+.box4{
+    background: url(https://wallpapercave.com/wp/wp2243687.jpg);
+    background-size: cover;
+}
+
+.box5{
+    background: url(https://wallpapercat.com/w/full/8/7/5/663-3840x2160-desktop-4k-red-dead-redemption-wallpaper-photo.jpg);
+    background-size: cover;
+}
+
+.box6{
+    background: url(https://images6.alphacoders.com/400/400016.jpg);
+    background-size: cover;
+}
+
+/* tab */
+
+@media all and (max-width:768px){
+    
+.page2{
+    /* border: 1px solid snow; */
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+    
+}
+
+.container1{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid snow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container1 .smallbox{
+    border: 1px solid snow;
+    height: 25%;
+    width: 45%;
+    border-radius: 10px;
+}   
+}
+
+/* Mobile */
+@media all and (max-width:667px){
+        
+.page2{
+    /* border: 1px solid snow; */
+    background-color: black;
+    height: 50vh;
+    width: 100%;
+    
+}
+
+.container1{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid snow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container1 .smallbox{
+    border: 1px solid snow;
+    height: 25%;
+    width: 45%;
+    border-radius: 10px;
+}   
+}
+
+/* page3 */
+
+.page3{
+    /* border: 1px solid snow; */
+    background-color: black;
+    height: 70vh;
+    width: 100%;
+}
+
+.page3 h3{
+    color: snow;
+    margin-left: 50px;
+}
+
+.page3 .container2{
+    /* border: 1px solid snow; */
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container2 .smallbox{
+    border: 1px solid snow;
+    height: 45%;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.container2 .smallbox:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.box7{
+    background: url(https://vrx.vr-expert.com/wp-content/uploads/2023/03/Blade-And-Sorcery-Nomad-featured-image-1568x882.webp);
+    background-size: cover;
+}
+
+.box8{
+    background: url(https://www.roadtovr.com/wp-content/uploads/2023/12/into-radius-2.jpg);
+    background-size: cover;
+}
+
+.box9{
+    background: url(https://www.uploadvr.com/content/images/size/w1024/format/webp/2024/08/Cover-Landscape.jpg);
+    background-size: cover;
+}
+
+
+.box10{
+    background: url(https://images.greenmangaming.com/ac01e954f9db4b359fff5698c676dc82/5ed5c92d4f284e6683019e7ccd2d59ef.jpg);
+    background-size: cover;
+}
+
+
+.box11{
+    background: url(https://img.itch.zone/aW1nLzEyNzY3MDE4LmpwZw==/original/8Xz7dk.jpg);
+    background-size: cover;
+}
+
+.box12{
+    background: url(https://i.ytimg.com/vi/6w7RxfyVceA/maxresdefault.jpg);
+    background-size: cover;
+}
+/* tab */
+
+@media all and (max-width:768px){
+
+.page3{
+    /* border: 1px solid snow; */
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+    
+}
+
+.container2{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid snow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container2 .smallbox{
+    /* border: 1px solid snow; */
+    height: 25%;
+    width: 45%;
+    border-radius: 10px;
+}   
+}
+
+/* Mobile */
+@media all and (max-width:667px){
+        
+.page3{
+    /* border: 1px solid snow; */
+    background-color: black;
+    height: 50vh;
+    width: 100%;
+    
+}
+.page3 h3{
+    color: snow;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.container2{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid snow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container2 .smallbox{
+    /* border: 1px solid snow; */
+    height: 25%;
+    width: 45%;
+    border-radius: 10px;
+}   
+}
+
+
+/* page4 */
+
+.page4 {
+    /* border: 1px solid snow; */
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+
+}
+
+.page4 ol {
+    /* border: 1px solid snow; */
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 60px;
+}
+
+ol li a:hover {
+    color: palevioletred;
+    transition: 0.5s;
+}
+
+ol li a {
+    text-decoration: none;
+    color: snow;
+    list-style: none;
+}
+
+.page4 .play {
+    /* border: 1px solid snow; */
+    height: 12%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -230px;
+    margin-left: 900px;
+}
+
+.play .one {
+    border: 1px solid snow;
+    height: 90%;
+    width: 35%;
+    background: url(../images/button1.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.page4 .play .one:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.play .two {
+    border: 1px solid snow;
+    height: 90%;
+    width: 35%;
+    background: url(../images/button2.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.page4 .play .two:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.page4 .social {
+    /* border: 1px solid snow; */
+    height: 8%;
+    width: 20%;
+    color: snow;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 1000px;
+    margin-top: 100px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(0, 0, 0, .4));
+}
+
+.social .fa-x-twitter:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgb(216, 112, 147);
+    text-shadow: 0 0 10px #ffffff,
+        0 0 20px #03bcf4,
+        0 0 40px #ffffff
+}
+
+.social .fa-instagram:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgb(216, 112, 147);
+    text-shadow: 0 0 10px #ffffff,
+        0 0 20px #03bcf4,
+        0 0 40px #ffffff
+}
+
+.social .fa-facebook-f:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgb(216, 112, 147);
+    text-shadow: 0 0 10px #ffffff,
+        0 0 20px #03bcf4,
+        0 0 40px #ffffff
+}
+
+.social .fa-threads:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgb(216, 112, 147);
+    text-shadow: 0 0 10px #ffffff,
+        0 0 20px #03bcf4,
+        0 0 40px #ffffff
+}
+
+/* tab */
+
+@media all and (max-width:768px) {
+
+    .page4 {
+        /* border: 1px solid snow; */
+        height: 50vh;
+        width: 100%;
+        background-color: black;
+
+    }
+
+    .page4 .play {
+        /* border: 2px solid rgb(255, 255, 255); */
+        height: 10%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 280px;
+        margin-top: -310px;
+    }
+
+    
+.play .one {
+    border: 1px solid snow;
+    height: 99%;
+    width: 38%;
+    background: url(../images/button1.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+.play .two {
+    border: 1px solid snow;
+    height: 99%;
+    width: 38%;
+    background: url(../images/button2.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+   
+  
+    .page4 .social {
+        /* border: 1px solid rgb(255, 255, 255); */
+        height: 7%;
+        width: 40%;
+        color: snow;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        margin-left: 400px;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(0, 0, 0, .4));
+    }
+
+}
+
+/* Mobile */
+@media all and (max-width:667px){
+    .page4 {
+        /* border: 1px solid snow; */
+        height: 50vh;
+        width: 100%;
+        background-color: black;
+
+    }
+
+    .page4 ol {
+        /* border: 1px solid snow; */
+        height: 70%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 10px;
+        font-size: 0.5rem;
+    }
+
+    .page4 .play {
+        /* border: 2px solid rgb(66, 63, 63); */
+        height: 11%;
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -200px;
+        margin-left: 130px;
+    }
+
+    
+.play .one {
+    border: 1px solid snow;
+    height: 70%;
+    width: 40%;
+    background: url(../images/button1.png);
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+.play .two {
+    border: 1px solid snow;
+    height: 70%;
+    width: 40%;
+    background: url(../images/button2.png);
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+
+    .page4 .social {
+        /* border: 1px solid rgb(0, 0, 0); */
+        height: 6%;
+        width: 40%;
+        color: snow;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(0, 0, 0, .4));
+        margin-left: 180px;
+    }
+
+}

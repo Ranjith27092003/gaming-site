@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.page1{
+    /* border: 1px solid snow; */
+    background-color: black;
+    height: 90vh;
+    width: 100%;
+}
+
+.page1 .nav{
+    /* border: 1px solid snow; */
+    height: 10%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position:fixed;
+    z-index: +999;
+}
+
+.nav .logo{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 5%;
+    background: url(../images/1logo.png) no-repeat;
+    background-size: cover;
+}
+
+.nav ul{
+    /* border: 1px solid snow; */
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav ul span{
+    color: palevioletred;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: snow;
+}
+
+ul li a:hover{
+    color: palevioletred;
+    transition: 0.5s;
+
+}
+
+.nav .icon{
+    /* border: 1px solid gold; */
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    color: snow;
+    font-size: 1.5rem;
+}
+
+.icon .bar{
+    visibility: hidden;
+}
+
+.search:hover{
+    color: palevioletred;
+    transition: 0.5s;
+}
+
+.user:hover{
+    color: palevioletred;
+    transition: 0.5s;
+}
+
+.bar:hover{
+    color: palevioletred;
+    transition: 0.5s;
+}
+
+.page1 .container{
+    /* border: 1px solid red; */
+    height:100% ;
+    width: 100%;
+}
+
+.container .box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+
+
+/* tab */
+
+@media all and (max-width:768px){
+    .page1 {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .page1 .nav {
+        /* border: 1px solid snow; */
+        height: 6%;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        z-index: +999;
+    }
+
+    .nav .logo {
+        /* border: 1px solid snow; */
+        height: 100%;
+        width: 7%;
+        margin-top: -8px;
+    }
+
+    .nav ul {
+        /* border: 1px solid snow; */
+        width: 80%;
+    }
+
+    .nav .icon {
+        /* border: 1px solid snow; */
+        width: 15%;
+    }
+}
+
+/* Mobile */
+@media all and (max-width:667px){
+    .page1 {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .page1 .nav {
+        /* border: 1px solid snow; */
+        height: 6%;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        z-index: +999;
+    }
+
+    .nav .logo {
+        /* border: 1px solid snow; */
+        height: 90%;
+        width: 9%;
+        margin-top: -8px;
+    }
+
+    .nav ul {
+        /* border: 1px solid snow; */
+        width: 60%;
+        font-size: 0.5rem;
+        visibility: hidden;
+    }
+
+    .nav .icon {
+        /* border: 1px solid snow; */
+        width: 25%;
+        font-size: 0.8rem;
+        visibility: hidden;
+    }
+
+    .icon .bar{
+        visibility: visible;
+    }
+
+   
+}
+
+/* page2 */
+
+.page2{
+    /* border: 1px solid snow; */
+    height: 40vh;
+    width: 100%;
+    background-color: black;
+}
+
+.page2 .container3{
+    /* border: 1px solid snow; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container3 .box{
+    border: 1px solid snow;
+    height: 75%;
+    width: 22%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container3 .box:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/* tab */
+
+@media all and (max-width:768px){
+    .page2{
+        /* border: 1px solid snow; */
+        height: 30vh;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .page2 .container3{
+        /* border: 1px solid snow; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container3 .box{
+        border: 1px solid snow;
+        height: 60%;
+        width: 22%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+/* Mobile */
+@media all and (max-width:667px){
+    .page2{
+        /* border: 1px solid snow; */
+        height: 20vh;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .page2 .container3{
+        /* border: 1px solid snow; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container3 .box{
+        /* border: 1px solid snow; */
+        height: 50%;
+        width: 20%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+
+/* page3  */
+
+.page3{
+    /* border: 1px solid snow; */
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+}
+
+.page3 h1{
+    color: snow;
+    margin-left: 30px;
+}
+
+.page3 .container4{
+    /* border: 1px solid snow; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container4 .boxs{
+    border: 1px solid snow;
+    height: 85%;
+    width: 17%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: -35px;
+}
+
+.container4 .boxs:hover{
+    transform: scale(1.08);
+    transition: 1s;
+}
+.box5{
+    background: url(https://static.wixstatic.com/media/0572e1_1bcb3947e6e44690af096f7223e9e9b5~mv2.jpg/v1/fill/w_560,h_764,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0572e1_1bcb3947e6e44690af096f7223e9e9b5~mv2.jpg);
+    background-size: cover;
+}
+
+.box6{
+    background: url(https://www.mythfactoryshop.com/cdn-cgi/image/format=webp/64521/vi-hot-toys-arcane-league-of-legends-action-figure.jpg);
+    background-size: cover;
+}
+
+.box7{
+    background: url(https://i.ebayimg.com/images/g/WhoAAOSw6jpnOwP1/s-l1200.jpg);
+    background-size: cover;
+}
+
+.box8{
+    background: url(https://popcollectibles.store/cdn/shop/files/467746689_594906036226691_3229241061888378555_n_967x.jpg?v=1732277445);
+    background-size: cover;
+}
+
+.box9{
+    background: url(https://www.sideshow.com/cdn-cgi/image/quality=90,f=auto/https://www.sideshow.com/storage/product-images/911841/black-adam_dc-comics_gallery_6337167693568.jpg);
+    background-size: cover;
+}
+
+/* tab */
+
+@media all and (max-width:768px){
+    
+.page3{
+    /* border: 1px solid snow; */
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+}
+
+.page3 h1{
+    color: snow;
+    margin-left: 30px;
+}
+
+.page3 .container4{
+    /* border: 1px solid snow; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container4 .boxs{
+    /* border: 1px solid snow; */
+    height: 75%;
+    width: 17%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: -35px;
+}
+
+}
+
+/* Mobile */
+@media all and (max-width:667px){
+        
+.page3{
+    /* border: 1px solid snow; */
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+}
+
+.page3 h1{
+    color: snow;
+    margin-left: 30px;
+    font-size: 1rem;
+}
+
+.page3 .container4{
+    /* border: 1px solid snow; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container4 .boxs{
+    /* border: 1px solid snow; */
+    height: 65%;
+    width: 17%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: -35px;
+}
+}
+
+/* page5 */
+.page5{
+    /* border: 1px solid snow; */
+    height: 40vh;
+    width: 100%;
+    background-color: black;
+}
+
+.page5 .container5{
+    /* border: 1px solid snow; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container5 .boxe{
+    border: 1px solid snow;
+    height: 75%;
+    width: 22%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.box11{
+    background: url(https://img.freepik.com/premium-photo/hightech-gaming-mouse-speedy-blue-color-accompanied-by-lightningstreaked-background_908985-80583.jpg);
+    background-size: cover;
+}
+
+.box12{
+    background: url(https://cdn.shopify.com/s/files/1/0012/4957/4961/files/redragon_k585_blue_switches_6.jpg?v=1588235814);
+    background-size: cover;
+}
+
+.box13{
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/036/018/012/small_2x/ai-generated-video-game-controller-with-bright-neon-light-streaks-computer-gamer-background-3d-octane-render-game-concept-ideas-ai-generative-photo.jpg);
+    background-size: cover;
+}
+
+.box14{
+    background: url(https://m.media-amazon.com/images/S/aplus-media/vc/99d97b17-c0b1-4d4a-b3c4-e5fec05d94fc.__CR0,0,600,450_PT0_SX600_V1___.jpg);
+    background-size: cover;
+}
+
+/* tab */
+
+@media all and (max-width:768px){
+    .page5{
+        /* border: 1px solid snow; */
+        height: 20vh;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .page5 .container5{
+        /* border: 1px solid snow; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container5 .boxe{
+        border: 1px solid snow;
+        height: 50%;
+        width: 22%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+/* Mobile */
+@media all and (max-width:667px){
+    .page5{
+        /* border: 1px solid snow; */
+        height: 10vh;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .page5 .container5{
+        /* border: 1px solid snow; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container5 .boxe{
+        border: 1px solid rgb(255, 255, 255);
+        height: 80%;
+        width: 22%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+
+
+.container5 .boxe:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+/* page4 */
+
+.page4 {
+    /* border: 1px solid snow; */
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+
+}
+
+.page4 ol {
+    /* border: 1px solid snow; */
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 60px;
+}
+
+ol li a:hover {
+    color: palevioletred;
+    transition: 0.5s;
+}
+
+ol li a {
+    text-decoration: none;
+    color: snow;
+    list-style: none;
+}
+
+.page4 .play {
+    /* border: 1px solid snow; */
+    height: 12%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -230px;
+    margin-left: 900px;
+}
+
+.play .one {
+    border: 1px solid snow;
+    height: 90%;
+    width: 35%;
+    background: url(../images/button1.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.page4 .play .one:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.play .two {
+    border: 1px solid snow;
+    height: 90%;
+    width: 35%;
+    background: url(../images/button2.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.page4 .play .two:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.page4 .social {
+    /* border: 1px solid snow; */
+    height: 8%;
+    width: 20%;
+    color: snow;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 1000px;
+    margin-top: 100px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(0, 0, 0, .4));
+}
+
+.social .fa-x-twitter:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgb(216, 112, 147);
+    text-shadow: 0 0 10px #ffffff,
+        0 0 20px #03bcf4,
+        0 0 40px #ffffff
+}
+
+.social .fa-instagram:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgb(216, 112, 147);
+    text-shadow: 0 0 10px #ffffff,
+        0 0 20px #03bcf4,
+        0 0 40px #ffffff
+}
+
+.social .fa-facebook-f:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgb(216, 112, 147);
+    text-shadow: 0 0 10px #ffffff,
+        0 0 20px #03bcf4,
+        0 0 40px #ffffff
+}
+
+.social .fa-threads:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgb(216, 112, 147);
+    text-shadow: 0 0 10px #ffffff,
+        0 0 20px #03bcf4,
+        0 0 40px #ffffff
+}
+
+/* tab */
+
+@media all and (max-width:768px) {
+
+    .page4 {
+        /* border: 1px solid snow; */
+        height: 50vh;
+        width: 100%;
+        background-color: black;
+
+    }
+
+    .page4 .play {
+        /* border: 2px solid rgb(255, 255, 255); */
+        height: 10%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 280px;
+        margin-top: -310px;
+    }
+
+    
+.play .one {
+    border: 1px solid snow;
+    height: 99%;
+    width: 38%;
+    background: url(../images/button1.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+.play .two {
+    border: 1px solid snow;
+    height: 99%;
+    width: 38%;
+    background: url(../images/button2.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+   
+  
+    .page4 .social {
+        /* border: 1px solid rgb(255, 255, 255); */
+        height: 7%;
+        width: 40%;
+        color: snow;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        margin-left: 400px;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(0, 0, 0, .4));
+    }
+
+}
+
+/* Mobile */
+@media all and (max-width:667px){
+    .page4 {
+        /* border: 1px solid snow; */
+        height: 50vh;
+        width: 100%;
+        background-color: black;
+
+    }
+
+    .page4 ol {
+        /* border: 1px solid snow; */
+        height: 70%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 10px;
+        font-size: 0.5rem;
+    }
+
+    .page4 .play {
+        /* border: 2px solid rgb(66, 63, 63); */
+        height: 11%;
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -200px;
+        margin-left: 130px;
+    }
+
+    
+.play .one {
+    border: 1px solid snow;
+    height: 70%;
+    width: 40%;
+    background: url(../images/button1.png);
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+.play .two {
+    border: 1px solid snow;
+    height: 70%;
+    width: 40%;
+    background: url(../images/button2.png);
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+
+    .page4 .social {
+        /* border: 1px solid rgb(0, 0, 0); */
+        height: 6%;
+        width: 40%;
+        color: snow;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(0, 0, 0, .4));
+        margin-left: 180px;
+    }
+
+}
